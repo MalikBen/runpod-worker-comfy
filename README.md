@@ -1,5 +1,7 @@
 # runpod-worker-comfy
 
+This is a fork of (https://github.com/blib-la/runpod-worker-comfy) with Meptl network volume integration. 
+
 > [ComfyUI](https://github.com/comfyanonymous/ComfyUI) as a serverless API on [RunPod](https://www.runpod.io/)
 
 <p align="center">
