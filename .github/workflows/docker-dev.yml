@@ -48,5 +48,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_REPO }}/${{ secrets.DOCKERHUB_IMG }}:dev
+          tags: ${{ secrets.DOCKERHUB_REPO }}/${{ secrets.DOCKERHUB_IMG }}:dev
