@@ -1,5 +1,6 @@
 comfyui:
      base_path: /runpod-volume
+     custom_nodes: custom_nodes/
      checkpoints: models/checkpoints/
      clip: models/clip/
      clip_vision: models/clip_vision/

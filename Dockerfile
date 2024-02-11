@@ -41,6 +41,14 @@ RUN if [ -z "$SKIP_DEFAULT_MODELS" ]; then wget -O models/loras/xl_more_art-full
 
 ADD src/extra_model_paths.yaml ./
 
+### Check for custom nodes 'requirements.txt' files and then run install
+RUN for dir in /comfyui/custom_nodes/*/; do \
+    if [ -f "$dir/requirements.txt" ]; then \
+        pip3 install --no-cache-dir -r "$dir/requirements.txt"; \
+    fi; \
+done
+
+
 # Go back to the root
 WORKDIR /
 
